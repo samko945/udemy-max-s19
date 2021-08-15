@@ -8,7 +8,16 @@ const initialState = {
 const cartSlice = createSlice({
 	name: "cart",
 	initialState,
-	reducers: {},
+	reducers: {
+		addItem(state, action) {
+			const itemIndex = state.items.findIndex((item) => item.id === action.payload);
+			if (itemIndex === -1) {
+				state.items = [...state.items, { id: action.payload, quantity: 1 }];
+			} else {
+				state.items[itemIndex].quantity += 1;
+			}
+		},
+	},
 });
 
 export const cartActions = cartSlice.actions;

@@ -9,6 +9,9 @@ const cartSlice = createSlice({
 	name: "cart",
 	initialState,
 	reducers: {
+		toggle(state) {
+			state.show = !state.show;
+		},
 		addItem(state, action) {
 			const itemIndex = state.items.findIndex((item) => item.id === action.payload.id);
 			const { id, title, price } = action.payload;

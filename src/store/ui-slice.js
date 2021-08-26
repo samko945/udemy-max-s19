@@ -14,7 +14,7 @@ const uiSlice = createSlice({
 			 *   message
 			 * }
 			 */
-			state.notificationState = action.payload;
+			state.notification = action.payload;
 		},
 	},
 });

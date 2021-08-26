@@ -20,8 +20,8 @@ _or inside of an action creator_
 -   ~~create a function in the cart reducer to replace the entire cart state with a new cart state.~~
 -   ~~copy the Notification.js and Notification.module.css files into our UI folder~~
 -   ~~crate a ui-slice with redux, to manage the show noticiation state.~~
--   send data to backend on every state change
-    -   do not send data on initial render
+-   ~~send data to backend on every state change~~
+    -   ~~do not send data on initial render~~
         ```javascript
         // define isInitial = true outside of a component
         let isInitial = true;
@@ -32,5 +32,5 @@ _or inside of an action creator_
         	return;
         }
         ```
--   retreive data from backend on initial render
--   display the notification component providing the status/title/message of the requests, this should show states for pending|success|error
+-   ~~retreive data from backend on initial render~~
+-   ~~display the notification component providing the status/title/message of the requests, this should show states for pending|success|error~~
